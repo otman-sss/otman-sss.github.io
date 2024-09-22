@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function Fibonacci(){
+      let inputValue = document.getElementById("limite").value
+      
+      if (!isNaN(inputValue) && inputValue > 0) {
+        let limite = parseInt(inputValue);
+        let fib = [0 , 1];
+        let resultado = "Resulatdo: <br>";
+
+       for(let i = 2; i < limite; i++){
+           fib[i] = fib[i - 1] + fib[i - 2]
+        }
+
+        for (let i = 0; i < limite; i++) {
+            resultado += fib[i] + "<br>"; 
+                }
+            
+            document.getElementById("out").innerHTML = resultado;
+        }
+        else {
+            document.getElementById("out").innerHTML =  `Ingresa un numero valido mayor a 0`;
+                   
+        }
+    }
+     
+</script>
+<body><p> <a  href= "index.html"> Regresar</a> <br></p>
+    Escribir un programa que la sucecion Fibonacci en el usted pone el limite<br>
+
+    
+    Elija la posicion el numero: <input type = "text" id="limite" value="20"><br>
+    <input type="button" value="Encontrar la secuencia fibonacci" onclick="Fibonacci()"><br>
+    <p id="out"> </p>
+    
+</body>
+</html>
