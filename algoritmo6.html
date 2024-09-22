@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo 6</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="./Ofuscaciones/O_funciones.js"></script>
+</head>
+<body>
+    <a href="index.html">REGRESAR</a>
+    <br><br>
+    <div class="form-container">
+        <p>
+            Capture e imprima un arreglo de 10 elementos de tipo entero. El arreglo se debe de imprimir de forma horizontal y vertical, muestre el índice de cada elemento. La captura de elementos se debe cancelar al introducir el último. Incluya un botón de reinicio.
+        </p>
+    </div>
+
+    <div class="form-container">
+        <fieldset>
+            <legend>Entrada ↴ [0---9]. Entrada ⇾ [0---9]</legend>
+            <form action="javascript:Capturar()">
+                <br>
+                <p id="arreglo">Capture el elemento [0]</p>
+                <input type="number" id="datos" onkeydown="if(event.key==='.') {event.preventDefault();}" required><br>
+                <p id="error"></p>
+                <br><br><input type="submit" class="b" id="boton" value="Capturar" onclick="Capturar()">
+                <input type="button" class="b" value="Reiniciar" onclick="Reiniciar()">
+                <br><br>
+            </form>
+        </fieldset>
+    </div>
+
+    <div class="form-container">
+        <fieldset><legend>Salida ↴</legend>
+            <table border="1">
+                <tr id="renglon"></tr>
+                <tr id="renglon2"></tr>
+            </table>
+            <table border="1" id="vertical"></table>
+        </fieldset>
+    </div>
+</body>
+</html>
