@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de π usando la Serie de Leibniz</title>
+</head>
+<script>
+    function PI() {
+        let pi = 0;
+        let signo = 1;
+        let iteraciones = 0;
+        let precision = 3.14159; 
+        let resultado = "Serie de Leibniz para calcular pi: <br>";
+
+        for (let i = 1; pi.toFixed(5) != precision; i += 2) {
+            pi += signo * (4 / i);
+            signo *= -1;
+            iteraciones++;
+            resultado += `Iteracion ${iteraciones} pi = ${pi} <br>`;
+        }
+
+        
+        document.getElementById("out").innerHTML = resultado;
+    }
+</script>
+<body>
+    <p><a href="index.html">Regresar</a><br></p>
+    Escribir un programa que calcule el valor de PI utilizando la serie de Leibniz hasta obtener 3.14159<br>
+
+    <input type="button" value="Calcular pi" onclick="PI()"><br>
+    <p id="out">Resultado: </p>
+    
+</body>
+</html>
