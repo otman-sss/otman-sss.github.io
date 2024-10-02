@@ -1,0 +1,18 @@
+.imagen{
+    /* Tambien podemos cambiar el tamaño con el %*/
+    width: 250px;
+    height: 150px;
+}
+
+table{
+    background-image: url("../img/funda4.jpg");
+    display: inline-table;
+
+}
+h1{
+    display: inline;
+}
+input[type =  button]{
+    font-size: larger;
+    background-color: aqua;
+}
