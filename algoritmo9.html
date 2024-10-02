@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/estilosMemorama.css">
+    <script src="./Ofuscaciones/O_funcionesMemorama.js"></script>
+
+</head>
+<a href="index.html"><button>Regresar al menú</button></a><br>
+<body onload="Revolver(); Fondo();">
+    <table id="tablon">
+        <tr>
+              <td><img src="./img/0.jpg" id = "0"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,0)"></td>
+              <td><img src="./img/0.jpg" id = "1"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,1)"></td>
+              <td><img src="./img/0.jpg" id = "2"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,2)"></td>
+              <td><img src="./img/0.jpg" id = "3"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,3)"></td>
+         </tr>
+         <tr>
+             <td><img src="./img/0.jpg" id = "4"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,4)"></td>
+             <td><img src="./img/0.jpg" id = "5"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,5)"></td>
+             <td><img src="./img/0.jpg" id = "6"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,6)"></td>
+             <td><img src="./img/0.jpg" id = "7"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,7)"></td>
+         </tr>
+         <tr>
+             <td><img src="./img/0.jpg" id = "8"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,8)"></td>
+             <td><img src="./img/0.jpg" id = "9"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,9)"></td>
+             <td><img src="./img/0.jpg" id = "10"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,10)"></td>
+             <td><img src="./img/0.jpg" id = "11"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,11)"></td>
+         </tr>
+         <tr>
+             <td><img src="./img/0.jpg" id = "12"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,12)"></td>
+             <td><img src="./img/0.jpg" id = "13"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,13)"></td>
+             <td><img src="./img/0.jpg" id = "14"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,14)"></td>
+             <td><img src="./img/0.jpg" id = "15"alt="" srcset="" class="imagen" onclick="VoltearImagen(this,15)"></td>
+        </tr>
+    </table>
+    <h1 id ="contador" style="display: inline;">PARES ENCONTRADOS: 0</h1>
+    <input type="button" value="Reiniciar" onclick="Reiniciar()">
+    <p id="salida"></p>
+</body>
+</html>
