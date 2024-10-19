@@ -1,0 +1,45 @@
+
+input[type = button]{
+    width: 150px; height: 150px;
+    font-size: 100px;
+}
+input[type = submit]{
+    position: fixed;
+    top: 20px;
+    left: 500px;
+    font-size: 40px;
+}
+h1{
+    /*display: inline;*/
+    position: fixed;
+    top: 20px;
+    left: 800px;
+}
+table{
+    /*display: inline-table;*/
+    position: relative; /*Este atributo hacen que se posicionen a los objetos en relacion en base a la tabla */
+    
+}
+
+tr{
+    position: relative;
+    border: 5px solid cadetblue;
+    border-top: 0px;
+}
+
+td{
+    position: relative;
+    border: 5px solid cadetblue;
+    border-top: none;
+}
+td:nth-child(1){
+    border: top solid cadetblue;
+    border-right: 5px cadetblue;
+}
+   
+
+
+
+
+
+
