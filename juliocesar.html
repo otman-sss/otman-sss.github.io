@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado de Caesar</title>
+    <script src="./Ofuscaciones/O_juliocesar.js"></script>
+    <link rel="stylesheet" href="./CSS/juliocesar.css">
+
+   
+</head>
+<a href="index.html"><button>Regresar al menú</button></a><br>
+<body onload="optionKey()">
+    <h1>Algoritmo de Cifrado de Cesar</h1>
+    <p style="display: inline; vertical-align: top; font-size: medium; font-weight: bolder;">Mensaje: </p>
+    <textarea name="" id="original" rows="20" style="width: 85%; resize: none;" 
+    onkeydown="allows(event)"
+    onkeyup="capital(this)"></textarea>
+    <br>
+    <p style="display: inline; font-size: medium; font-weight: bolder;">Clave/ Llave/ Key</p>
+    <select name="" id="key1"></select>
+    <select name="" id="key2"></select>
+    <select name="" id="key3"></select>
+    <select name="" id="key4"></select>
+    <select name="" id="key5"></select>
+    <select name="" id="key6"></select>
+    <input type="button" value="Ejemplo 1" onclick="Ejemplo1()">
+    <input type="button" value="Ejemplo 2" onclick="Ejemplo2()">
+    <input type="button" value="Limpiar" onclick="Clear()">
+    <input type="button" value="Encriptar" onclick="Encriptar()">
+    <input type="button" value="Guardar Llave" onclick="guardarLlave()">
+    <input type="button" value="Guardar Mensaje Encriptado" onclick="guardarMensaje()">
+    <br>
+    <p style="font-size: medium; font-weight: bolder;">Mensaje Encriptado:</p>
+    <textarea name="" id="encriptado" rows="20" style="width: 85%; resize: none;" readonly></textarea>
+</body>
+</html>
