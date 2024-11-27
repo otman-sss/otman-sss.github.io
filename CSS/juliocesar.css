@@ -1,0 +1,11 @@
+p {
+    display: inline;
+    vertical-align: top;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+textarea{
+    width: 85%;
+    resize: none;
+}

@@ -1,0 +1,10 @@
+#contenedortabla{
+    max-height: 80vh;
+    overflow-y: auto;
+}
+tabla{
+    border-collapse: collapse;
+}
+img{
+    display: inline-table;
+}
